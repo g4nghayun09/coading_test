@@ -8,9 +8,8 @@ class Solution {
             if(smallNum+i>bigNum)
                 answer++;
         }
-        for(int i=bigNum+1; i<=bigNum+smallNum; i++) {
-            if(bigNum+smallNum==i)
-                break;
+        for(int i=bigNum+1; i<bigNum+smallNum; i++) {
+            
             answer++;
         }
         return answer;
