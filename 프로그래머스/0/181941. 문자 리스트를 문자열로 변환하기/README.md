@@ -1,10 +1,10 @@
 # [level 0] 문자 리스트를 문자열로 변환하기 - 181941 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181941) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181941?language=javascript) 
 
 ### 성능 요약
 
-메모리: 85 MB, 시간: 11.62 ms
+메모리: 33.6 MB, 시간: 0.10 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 08월 21일 15:26:38
+2026년 04월 28일 14:25:37
 
 ### 문제 설명
 
