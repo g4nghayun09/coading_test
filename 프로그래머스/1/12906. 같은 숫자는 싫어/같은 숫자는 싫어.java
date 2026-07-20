@@ -1,27 +1,22 @@
 import java.util.*;
 
 public class Solution {
-    public int[] solution(int []arr){
+    public int[] solution(int []arr) {
         
-        int cnt=1;
-        for(int i=1; i<arr.length; i++){
-            if(arr[i-1]!=arr[i]){
-                cnt++;
+        Stack<Integer> stk = new Stack<>();
+        // ------------------------------------
+        
+        for(int i=0; i<arr.length; i++) {
+            if(stk.isEmpty()||stk.peek() != arr[i]) {
+                stk.push(arr[i]);
             }
         }
-        int answer[] = new int[cnt];
-        //위의 코드가 배열 방잡는 거임
-        answer[0] = arr[0];
-        int num=1;
-        for(int i=1; i<arr.length; i++){
-            if(arr[i-1]!=arr[i]){
-                answer[num] = arr[i];
-                num++;
-            }
+        
+        // ------------------------------------
+        int[] answer = new int[stk.size()];
+        for (int i = answer.length - 1; i >= 0; i--) {
+            answer[i] = stk.pop();
         }
-        // [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
-        // System.out.println("Hello Java");
-
         return answer;
     }
 }
